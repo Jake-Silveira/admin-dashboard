@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 25px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    grid-column: 2;
+}
+
+ul{
+    list-style: none;
+}
+
+#searchLogo, #notificationLogo, #avatarLogo, .icon{
+    height: 20px;
+    width: auto;
+}
