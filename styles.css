@@ -1,18 +1,18 @@
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr 1fr;
     gap: 25px;
 }
 
 .header{
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 
 .header ul{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 50px;
+    gap: 150px;
 }
 
 ul{
@@ -27,18 +27,67 @@ ul{
 
 .notificationContainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr) repeat(1, 1fr);
     gap: 30px;
 }
+ #username{
+    width: 120px;
+ }
 
-#searchLogo, #notificationLogo, #avatarLogo, .icon{
+ #searchBar{
+    width: 350px;
+    border-radius: 10px;
+ }
+
+.header .icon, .sidebar .icon{
     height: 20px;
     width: auto;
 }
 
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
 .nav{
+    height: 100px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+
+.nav ul{
+    display: grid;
+    grid-template-columns: 1fr 5fr repeat(3, 1fr);
+    align-items: center;
+}
+
+.nav .icon{
+    height: 75px;
+    width: auto;
+}
+
+.navButtons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    grid-column-start: 2 / 3
+    gap: 20px;
+}
+
+.navButtons button{
+    border-radius: 25px;
+    height: 35px;
+    width: 100px;
+}
+
+.welcomeContainer div{
+    font-size: 30px;
+    width: 400px;
+    padding-right: 200px;
+}
+
+.content{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
