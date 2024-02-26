@@ -5,17 +5,40 @@
 }
 
 .header{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.header ul{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 50px;
-    grid-column: 2;
 }
 
 ul{
     list-style: none;
 }
 
+.searchContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.notificationContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 #searchLogo, #notificationLogo, #avatarLogo, .icon{
     height: 20px;
     width: auto;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column-start: 2 / 3
 }
