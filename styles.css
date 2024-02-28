@@ -49,6 +49,21 @@ ul{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 6;
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr;
+}
+
+.sidebar ul, .sidebar div{
+    font-size: 25px;
+}
+
+.sideSection1{
+    display: grid;
+    gap: 20px;
+}
+
+.sideSection2 li{
+    padding-top: 20px;
 }
 
 .nav{
