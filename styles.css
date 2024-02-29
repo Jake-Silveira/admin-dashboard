@@ -1,6 +1,6 @@
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1.5fr 5fr 1fr 1fr;
     gap: 25px;
 }
 
@@ -17,6 +17,21 @@
 
 ul{
     list-style: none;
+}
+
+.sidebar{
+    background-color: #0091d5;
+    width: 250px;
+}
+
+.sidebar div{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.sidebar ul a, .sidebar div{
+    text-decoration: none;
+    color: #f1f1f1;
 }
 
 .searchContainer{
