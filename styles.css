@@ -1,12 +1,13 @@
 .container{
+    background-color: #7e909A;
     display: grid;
-    grid-template-columns: 1.5fr 5fr 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: .5fr 5fr 1fr 1fr;
 }
 
-.header{
+.header, .nav{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
+    background-color: #f1f1f1;
 }
 
 .header ul{
@@ -50,8 +51,13 @@ ul{
  }
 
  #searchBar{
-    width: 350px;
-    border-radius: 10px;
+    width: 850px;
+    height: 30px;
+    border-radius: 15px;
+ }
+
+ #searchLogo{
+    height: 30px;
  }
 
 .header .icon, .sidebar .icon{
@@ -83,9 +89,6 @@ ul{
 
 .nav{
     height: 100px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    
 }
 
 .nav ul{
@@ -109,6 +112,7 @@ ul{
     border-radius: 25px;
     height: 35px;
     width: 100px;
+    background-color: #0091d5;
 }
 
 .welcomeContainer div{
@@ -120,4 +124,33 @@ ul{
 .content{
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+.content div{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.ad{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 0fr 1fr;
+    padding: 20px;
+}
+
+.ad div{
+    font-size: 20px;
+}
+
+.adSection1, .adSection2{
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.adSection1 .listHead{
+    font-size: 20px;
+    padding: 2px;
+    font-weight: 800;
 }
