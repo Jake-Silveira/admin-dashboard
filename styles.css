@@ -111,6 +111,7 @@ ul{
 }
 
 .navButtons button{
+    border-style: none;
     border-radius: 25px;
     height: 35px;
     width: 100px;
