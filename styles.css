@@ -131,7 +131,54 @@ ul{
 
 .content div{
     font-size: 20px;
-    margin: 20px;
+    padding: 20px;
+}
+
+.contentGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contentGrid .gridItem{
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #f1f1f1;
+    border-left-color: #EA6A47;
+    border-left-width: 10px;
+}
+
+.contentGrid a{
+    text-decoration: none;
+    color: #202020;
+    font-weight: 600;
+}
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.gridItem div{
+    padding: 15px;
+}
+
+.gridItemIcons{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: end;
+}
+
+.gridItemIcons .icon{
+    padding: 15px;
+}
+
+.gridItem .icon{
+    width: 20px;
+    height: auto;
 }
 
 .ad{
