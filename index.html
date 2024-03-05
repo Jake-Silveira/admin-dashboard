@@ -10,29 +10,32 @@
 <body>
     <div class="container">
         <div class="header">
-            <ul>
+            <div class="headSection1">
                 <div class="searchContainer">
-                <li><img src="photos/search-icon.webp" id="searchLogo" class="icon"></li>
-                <li><input type="search" id="searchBar"></li>
+                    <img src="photos/search-icon.webp" id="searchLogo" class="icon">
+                    <input type="search" id="searchBar">
                 </div>
                 <div class="notificationContainer">
-                <li><img src="photos/notifications-outline.svg" id="notificationLogo" class="icon"></li>
-                <li><img src="photos/avatar.svg" id="avatarLogo" class="icon"></li>
-                <li><div id="username">Jacob Silveira</div></li>
+                    <img src="photos/notifications-outline.svg" id="notificationLogo" class="icon">
+                    <img src="photos/avatar.svg" id="avatarLogo" class="icon">
+                    <div id="username">Jacob Silveira</div>
                 </div>
-            </ul>
-        <div class="nav">
-                <ul>
-                        <li><img src="photos/avatar.svg" id="avatarLogo" class="icon"></li>
+            </div>
+            <div class="nav">
+                <div class="iconWelcomeContainer">
+                    <img src="photos/avatar.svg" id="avatarLogo" class="icon">
                     <div class="welcomeContainer">
-                        <li>Hi there,<div>Jacob Silveira(@jacob)</div></li>
+                        <div>Hi there,</div>
+                        <span>Jacob Silveira(@jacob)</span>
                     </div>
-                    <div class="navButtons">
-                        <li><button id="newBtn">New</button></li>
-                        <li><button id="uploadBtn">Upload</button></li>
-                        <li><button id="shareBtn">Share</button></li>
-                    </div>
-                </ul>
+                </div>
+
+                <div class="navButtons">
+                        <button id="newBtn">New</button>
+                        <button id="uploadBtn">Upload</button>
+                        <button id="shareBtn">Share</button>
+                </div>
+                
             </div>
         </div>
         <div class="sidebar">
@@ -115,9 +118,6 @@
                 <img src="photos/alex.svg" class="icon">
                 <li> @alex<div>No Traffic Maker</div></li>
             </ul>
-        </div>
-        <div class="footer">
-        </div>
     </div>
     
 </body>

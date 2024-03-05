@@ -1,19 +1,29 @@
 .container{
     background-color: #7e909A;
     display: grid;
-    grid-template-columns: .5fr 5fr 1fr 1fr;
+    grid-template-columns: minmax(225px, 250px) minmax(500px, 1000px) minmax(300px, 500px);
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 .header, .nav{
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 4;
     background-color: #f1f1f1;
 }
 
-.header ul{
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.header .headSection1{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 150px;
+    grid-template-columns: minmax(500px, 750px) minmax(0px, 700px);
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 ul{
@@ -22,7 +32,6 @@ ul{
 
 .sidebar{
     background-color: #0091d5;
-    width: 250px;
 }
 
 .sidebar div{
@@ -36,26 +45,29 @@ ul{
 }
 
 .searchContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
+#searchBar{
+    height: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 450px;
+ }
+
 .notificationContainer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) .1fr;
+    display: flex;
+    flex-direction: row;
     gap: 20px;
+    grid-column-start: 3;
+    align-items: center;
 }
 
  #username{
     width: 120px;
- }
-
- #searchBar{
-    width: 850px;
-    height: 30px;
-    border-radius: 15px;
-    font-size: 20px;
  }
 
  #searchLogo{
@@ -71,7 +83,7 @@ ul{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 4;
     display: grid;
     grid-template-rows: .5fr 1fr 1fr;
 }
@@ -90,12 +102,11 @@ ul{
 }
 
 .nav{
-    height: 100px;
-}
-
-.nav ul{
     display: grid;
-    grid-template-columns: 1fr 5fr repeat(3, 1fr);
+    grid-template-columns: minmax(500px, 750px) minmax(0px, 700px);
+    box-sizing: border-box;
+    overflow: auto;
+    gap: 0;
     align-items: center;
 }
 
@@ -107,6 +118,7 @@ ul{
 .navButtons{
     display: flex;
     flex-direction: row;
+    grid-column-start: 3;
     gap: 20px;
 }
 
@@ -118,10 +130,24 @@ ul{
     background-color: #0091d5;
 }
 
+.iconWelcomeContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcomeContainer{
+    display: flex;
+    flex-direction: column;
+}
+
 .welcomeContainer div{
     font-size: 30px;
-    width: 400px;
-    padding-right: 200px;
+}
+
+.welcomeContainer span{
+    font-size: 20px;
 }
 
 .content{
@@ -185,8 +211,9 @@ ul{
 
 .ad{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0fr 1fr 0fr 1fr;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 20px;
     padding: 20px;
 }
 
@@ -198,7 +225,6 @@ ul{
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
 }
 
 .adSection1 .listHead{
@@ -216,7 +242,6 @@ ul{
 
 .adSection2 .icon{
     height: 40px;
-    grid-column: span 1;
     grid-column-start: 1;
     grid-column-end: 2;
 }
